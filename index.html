@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="new.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Hairline&family=Codystar:wght@300&family=Wire+One&display=swap" rel="stylesheet">
+    <title>CALCULATOR</title>
+</head>
+
+<body>
+    <div class="main">
+    <table>
+        <form name="form">
+            <input class="textview" name="textview" type="text" placeholder="" style="padding: 40px 0px  0px 40px;" >
+        
+        </form>
+        <tr>
+            <td><button class="glow-on-hover" type="button" value="1" onclick="insert(1)">1</button></td>
+            <td><button class="glow-on-hover" type="button" value="2" onclick="insert(2)">2</button></td>
+            <td><button class="glow-on-hover" type="button" value="3" onclick="insert(3)">3</button></td>
+            <td><button class="glow-on-hover" type="button" value="<" onclick="back(`<`)"><</button></td>
+        </tr>
+
+        <tr>
+            <td><button class="glow-on-hover" type="button" value="4" onclick="insert(4)">4</button></td>
+            <td><button class="glow-on-hover" type="button" value="5" onclick="insert(5)">5</button></td>
+            <td><button class="glow-on-hover" type="button" value="6" onclick="insert(6)">6</button></td>
+            <td><button class="glow-on-hover" type="button" value="-" onclick="insert(`-`)">-</button></td>
+        </tr>
+        <tr>
+            <td><button class="glow-on-hover" type="button" value="7" onclick="insert(7)">7</button></td>
+            <td><button class="glow-on-hover" type="button" value="8" onclick="insert(8)">8</button></td>
+            <td><button class="glow-on-hover" type="button" value="9" onclick="insert(9)">9</button></td>
+            <td><button class="glow-on-hover" type="button" value="+" onclick="insert(`+`)">+</button></td>
+        </tr>
+        <tr>
+            <td><button class="glow-on-hover" type="button" value="0" onclick="insert(0)">0</button></td>
+            <td><button class="glow-on-hover" type="button" value="/" onclick="insert(`/`)">/</button></td>
+            <td><button class="glow-on-hover" type="button" value="C" onclick="clean(`C`)">C</button></td>
+            <td><button class="glow-on-hover" type="button" value="*" onclick="insert(`*`)">*</button></td>
+        </tr>
+        <tr>
+            <td><button class="glow-on-hover" type="button" value="%" onclick="per(`%`)">%</button></td>
+            <td><button class="glow-on-hover" type="button"  value="." onclick="insert(`.`)">.</button></td>
+            <td colspan="3"><button style="width: 200px;" class="glow-on-hover" type="button" type="button" value="Enter" onclick='equal()'>Enter</button></td>
+        </tr>
+    </table>
+</div>
+   
+    <script src="main.js"></script> 
+</body>
+
+</html>
